@@ -20,7 +20,7 @@ describe('application lifecycle test', () => {
     await expect(elementById(testIDs.WELCOME_SCREEN_HEADER)).toBeVisible();
   });
 
-  it('relaunch from background', async () => {
+  xit('relaunch from background', async () => {
     await elementById(testIDs.PUSH_BUTTON).tap();
     await expect(elementByLabel('Pushed Screen')).toBeVisible();
 
